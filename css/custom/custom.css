@@ -1,0 +1,7 @@
+.custom_groupitem_click{
+    cursor: pointer;
+    
+}
+.custom_groupitem_click:hover{
+    background-color: #D1D119;
+}
