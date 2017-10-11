@@ -6,6 +6,7 @@
         <ul class="nav navbar-nav">
             <li><a href="index.php">Trang chủ</a></li>
             <li><a target="_blank" href="https://minhphong306.wordpress.com">Blog</a></li>
+            <li><a href="material.php">Material</a></li>
             <li><a href="data-mining.php">Data mining</a></li>
 
         </ul>
