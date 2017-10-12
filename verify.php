@@ -8,6 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$response = curl_exec($ch);
 	curl_close($ch);
 } else{
-	echo $_GET["hub.challenge"];
+    if (isset($_GET["hub.challenge"])) {
+        echo $_GET["hub.challenge"];
+    }
 }
 ?>
