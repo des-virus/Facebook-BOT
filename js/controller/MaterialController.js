@@ -1,4 +1,4 @@
-app.controller('MaterialCtrl', function ($scope, $rootScope, $filter, MaterialService) {
+app.controller('MaterialCtrl', function ($scope, $rootScope, $filter, $sce, MaterialService) {
 
     $scope.menus = [];
     $scope.data = [];
@@ -23,5 +23,9 @@ app.controller('MaterialCtrl', function ($scope, $rootScope, $filter, MaterialSe
         });
     };
 
+    $scope.trustSrc = function(src){
+        return $sce.trustAsResourceUrl(src);
+    };
+    
     $scope.getMenu();
 });

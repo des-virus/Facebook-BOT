@@ -8,6 +8,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
         <script src="js/lib/angular.min.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-sanitize.min.js" type="text/javascript"></script>
         <script src="js/lib/jquery-3.1.1.min.js" type="text/javascript"></script>
         <script src="js/lib/bootstrap.min.js" type="text/javascript"></script>
 
@@ -71,13 +72,19 @@
                                 </div>
                             </div>		
                             <!-- End Table of content -->
-
-                            <div class="panel panel-default" ng-repeat="item in data track by $index">
-                                <div class="panel-heading" id="{{item.id_string}}">{{item.title}}</div>
-                                <div class="panel-body">
-                                    {{item.content}}
-                                </div>
+                            <script src="https://gist.github.com/des-virus/600c85f5ced4ceb2cdd49cc07029d0cd.js"></script>
+                            <div class="row" ng-repeat="item in data track by $index">
+                                <p>
+                                    <myframe link="item.gist"></myframe>
+                                </p>
+                                
                             </div>
+                            <!--                            <div class="panel panel-default" ng-repeat="item in data track by $index">
+                                                            <div class="panel-heading" id="{{item.id_string}}">{{item.title}}</div>
+                                                            <div class="panel-body">
+                                                                {{item.content}}
+                                                            </div>
+                                                        </div>-->
                         </div>
                     </div>
                 </div>
